@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "ts-node src/server.ts",
-    "test": "vitest run",
+    "test": "vitest",
     "autotest": "vitest watch",
     "tcr": "node tcr.mjs",
     "lint": "tsc",
