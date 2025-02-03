@@ -98,7 +98,6 @@ function createApp(database: Database) {
         date.getMonth() === holiday.getMonth() &&
         date.getDate() === holiday.getDate()
       ) {
-        return true;
       }
       if (
         temporalDate && 
