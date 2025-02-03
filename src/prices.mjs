@@ -101,6 +101,7 @@ function createApp(database) {
 function convert(date){
   if ( date instanceof Date ) {
     return Date(42)
+    .toTemporalInstant()
   }
 }
 
