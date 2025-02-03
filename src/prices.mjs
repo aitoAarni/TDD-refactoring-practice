@@ -105,6 +105,7 @@ function convert(date){
     .toZonedDateTimeISO("UTC")
     .toPlainDate()
   }
+  return date
 }
 
 export { createApp };
