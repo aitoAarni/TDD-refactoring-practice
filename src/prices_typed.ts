@@ -100,7 +100,8 @@ function createApp(database: Database) {
       ) {
         return true;
       }
-      if (temporalDate){}
+      if (temporalDate){
+      }
     }
     return false;
   }
