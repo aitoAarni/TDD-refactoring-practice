@@ -21,6 +21,7 @@ function createApp(database: Database) {
     const type = req.query.type as string;
     const baseCost = database.findBasePriceByType(type)!.cost;
     const date = parseDate(req.query.date as string);
+    const plainDate =parsePlainDate(req.query.data as string)
     const cost = calculateCost(age, type, date, baseCost);
     res.json({ cost });
   });
@@ -36,7 +37,7 @@ function createApp(database: Database) {
     }
   }
 
-  function calculateCost(age: number | undefined, type: string, date: Date | undefined, baseCost: number) {
+  function calculateCost(age: number | undefined, type: string, date: Date | undefined, baseCost: number, plainDate: Temporal.PlainDate | undefined = undefined) {
     if (type === "night") {
       return calculateCostForNightTicket(age, baseCost);
     } else {
