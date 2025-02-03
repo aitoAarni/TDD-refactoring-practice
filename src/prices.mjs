@@ -99,7 +99,8 @@ function createApp(database) {
 }
 
 function convert(date){
-  if ( date instanceof Date ) {}
+  if ( date instanceof Date ) {
+}
 }
 
 export { createApp };
