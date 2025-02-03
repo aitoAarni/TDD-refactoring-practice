@@ -95,7 +95,7 @@ function createApp(database: Database) {
       if (
         temporalDate && 
         temporalDate.year === holiday.year && 
-        temporalDate.month === holiday2.month && 
+        temporalDate.month === holiday.month && 
         temporalDate.day === holiday2.day 
       ){
         return true
