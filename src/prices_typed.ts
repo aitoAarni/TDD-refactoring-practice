@@ -94,7 +94,7 @@ function createApp(database: Database) {
       let holiday2 = Temporal.PlainDate.from(row.holiday)
       if (
         temporalDate && 
-        temporalDate.year === holiday2.year && 
+        temporalDate.year === holiday.year && 
         temporalDate.month === holiday2.month && 
         temporalDate.day === holiday2.day 
       ){
