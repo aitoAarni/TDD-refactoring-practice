@@ -83,7 +83,7 @@ function createApp(database: Database) {
     return reduction;
   }
 
-  function isMonday(date: Date) {
+  function isMonday(date: Date, temporalDate: Temporal.PlainDate | undefined = undefined) {
     return date.getDay() === 1;
   }
 
