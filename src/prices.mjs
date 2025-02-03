@@ -103,6 +103,7 @@ function convert(date){
     return Date(42)
     .toTemporalInstant()
     .toZonedDateTimeISO("UTC")
+    .toPlainDate()
   }
 }
 
