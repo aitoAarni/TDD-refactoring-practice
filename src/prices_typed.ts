@@ -33,7 +33,7 @@ function createApp(database: Database) {
   }
   function parsePlainDate(plainDateString: string | undefined): Temporal.PlainDate | undefined {
     if (plainDateString) {
-      return;
+      return Temporal.PlainDate.from(plainDateString);
     }
   }
 
