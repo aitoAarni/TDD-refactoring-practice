@@ -99,6 +99,7 @@ function createApp(database) {
 }
 
 function convert(){
-  }
+  
+}
 
 export { createApp };
